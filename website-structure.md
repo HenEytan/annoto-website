@@ -97,7 +97,7 @@ ANNOTO
     ├── Security & Trust               /security
     └── Contact                        /contact-us
 
-──────────────────────────────────────────
+─────────────────────────────────────────
 PRIMARY CTA (sticky nav + hero): Book a Demo   /demo
 SECONDARY CTA: Watch a 2-min tour             /tour
 ─────────────────────────────────────────
@@ -443,7 +443,7 @@ Route by inquiry type: Sales / Support / Press / Partnership.
 | `/landing-page` | Archive — replace with `/demo` |
 | `/help` | Redirect to `docs.annoto.net` |
 | `/events/local` | Fold into `/events` |
-| Template pages (`/template-*`) | Already draft — leave archived |
+| Template pages (`/template/*`) | Already draft — leave archived |
 | `/test`, `/testing` | Delete |
 | `/old-home` | Delete |
 
