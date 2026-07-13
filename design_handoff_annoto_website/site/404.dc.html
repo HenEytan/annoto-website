@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <title>Page Not Found — Annoto</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Head back to the Annoto homepage.">
+  <meta property="og:title" content="Page Not Found — Annoto">
+  <meta property="og:description" content="The page you're looking for doesn't exist. Head back to the Annoto homepage.">
+  <link rel="stylesheet" href="_ds/annoto-marketing-design-system-986ad5c2-d539-4204-8e47-75c8c182eb39/styles.css">
+  <script src="_ds/annoto-marketing-design-system-986ad5c2-d539-4204-8e47-75c8c182eb39/_ds_bundle.js"></script>
+  <script src="site-fx.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; }
+    a { color: #16181A; text-decoration: none; transition: color .18s ease, background-color .18s ease, border-color .18s ease, box-shadow .25s ease, transform .2s ease; }
+    a:hover { color: #F1615C; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+    .nvdd { position: relative; }
+    .nvpanel { position: absolute; top: 100%; left: 50%; transform: translate(-50%, 10px); padding-top: 12px; opacity: 0; visibility: hidden; transition: opacity .24s cubic-bezier(.2,.8,.2,1), transform .24s cubic-bezier(.2,.8,.2,1), visibility 0s linear .24s; z-index: 90; }
+    .nvdd:hover .nvpanel, .nvdd:focus-within .nvpanel { opacity: 1; visibility: visible; transform: translate(-50%, 0); transition: opacity .24s cubic-bezier(.2,.8,.2,1), transform .24s cubic-bezier(.2,.8,.2,1); }
+    .nvpanel.nvright { left: auto; right: -12px; transform: translate(0, 10px); }
+    .nvdd:hover .nvpanel.nvright, .nvdd:focus-within .nvpanel.nvright { transform: translate(0, 0); }
+    .nvpanel.nvleft { left: -12px; right: auto; transform: translate(0, 10px); }
+    .nvdd:hover .nvpanel.nvleft, .nvdd:focus-within .nvpanel.nvleft { transform: translate(0, 0); }
+    .nvchev { display: inline-block; transition: transform .2s ease; }
+    .nvdd:hover .nvchev { transform: rotate(180deg); }
+    .nvitem { display: flex; gap: 12px; align-items: flex-start; padding: 11px 12px; border-radius: 12px; transition: background .16s ease; }
+    .nvitem:hover { background: #FFF6F5; }
+    .nvitem:hover .nvit { color: #F1615C; }
+  </style>
+</helmet>
+
+<div style="font-family:'Poppins',sans-serif;color:#16181A;min-height:100vh;display:flex;flex-direction:column" data-screen-label="404">
+
+  <!-- Nav -->
+  <nav style="position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;row-gap:12px;align-items:center;justify-content:space-between;padding:14px clamp(24px,3.4vw,64px);background:rgba(255,255,255,0.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E2E2E5">
+    <a href="Home.dc.html" style="display:flex;align-items:center"><img src="assets/logo-annoto-wordmark.png" alt="Annoto" style="height:34px;display:block"></a>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px">
+      <div class="nvdd">
+        <span tabindex="0" style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:500;color:#3B3F45;padding:10px 14px;border-radius:999px" style-hover="background:#F5F5F7;color:#16181A">Product <span class="nvchev" style="font-size:9px;color:#9CA3AF">▼</span></span>
+        <div class="nvpanel nvleft">
+          <div style="width:540px;max-width:calc(100vw - 32px);box-sizing:border-box;background:#fff;border:1px solid #E2E2E5;border-radius:18px;box-shadow:0 28px 70px rgba(20,24,28,0.16);padding:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px">
+          <a class="nvitem" href="Features.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/quizzes.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Features</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Everything on the timeline</span></span>
+          </a>
+          <a class="nvitem" href="Lumo AI.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-ai-copilot.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Lumo AI</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">AI copilot for video learning</span></span>
+          </a>
+          <a class="nvitem" href="Analytics.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#E9FBFA;display:flex;align-items:center;justify-content:center"><img src="assets/illus/video-analytics.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Analytics</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Attention &amp; comprehension insight</span></span>
+          </a>
+          <a class="nvitem" href="Integrations.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-layers.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Integrations</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">LMS &amp; video platforms</span></span>
+          </a>
+          <a class="nvitem" href="Product Tour.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/timeline.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Product Tour</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Five minutes inside Annoto</span></span>
+          </a>
+          <a class="nvitem" href="Developers.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#E9FBFA;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-knowledge.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Developers</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">SDK, API &amp; webhooks</span></span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="nvdd">
+        <span tabindex="0" style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:500;color:#3B3F45;padding:10px 14px;border-radius:999px" style-hover="background:#F5F5F7;color:#16181A">Solutions <span class="nvchev" style="font-size:9px;color:#9CA3AF">▼</span></span>
+        <div class="nvpanel">
+          <div style="width:540px;max-width:calc(100vw - 32px);box-sizing:border-box;background:#fff;border:1px solid #E2E2E5;border-radius:18px;box-shadow:0 28px 70px rgba(20,24,28,0.16);padding:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px">
+          <a class="nvitem" href="Solutions.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-collaboration.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">All Solutions</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">One platform, every learner</span></span>
+          </a>
+          <a class="nvitem" href="solutions/Higher Education.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/people.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Higher Education</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Active learning on campus</span></span>
+          </a>
+          <a class="nvitem" href="solutions/K-12 Schools.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#E9FBFA;display:flex;align-items:center;justify-content:center"><img src="assets/illus/groups-chat.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">K-12 Schools</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Safe, guided participation</span></span>
+          </a>
+          <a class="nvitem" href="solutions/Corporate Learning.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/assessment-criteria.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Corporate Learning</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Training that sticks</span></span>
+          </a>
+          <a class="nvitem" href="solutions/Media and Communities.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/video-comments.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Media &amp; Communities</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Audiences that talk back</span></span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="nvdd">
+        <span tabindex="0" style="cursor:pointer;display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:500;color:#3B3F45;padding:10px 14px;border-radius:999px" style-hover="background:#F5F5F7;color:#16181A">Resources <span class="nvchev" style="font-size:9px;color:#9CA3AF">▼</span></span>
+        <div class="nvpanel">
+          <div style="width:560px;max-width:calc(100vw - 32px);box-sizing:border-box;background:#fff;border:1px solid #E2E2E5;border-radius:18px;box-shadow:0 28px 70px rgba(20,24,28,0.16);padding:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px">
+          <a class="nvitem" href="Customers.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/badges.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Customers</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Stories &amp; case studies</span></span>
+          </a>
+          <a class="nvitem" href="Why Annoto.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-insights.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Why Annoto</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">How we compare</span></span>
+          </a>
+          <a class="nvitem" href="Partners.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#E9FBFA;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-community.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Partners</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Platform &amp; channel partners</span></span>
+          </a>
+          <a class="nvitem" href="About.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-engagement.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">About</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Our mission &amp; story</span></span>
+          </a>
+          <a class="nvitem" href="Team.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/people.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Team</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">The people behind Annoto</span></span>
+          </a>
+          <a class="nvitem" href="Security.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#E9FBFA;display:flex;align-items:center;justify-content:center"><img src="assets/illus/abstract-layers.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Security &amp; Trust</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Our security posture</span></span>
+          </a>
+          <a class="nvitem" href="Compliance.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF1F0;display:flex;align-items:center;justify-content:center"><img src="assets/illus/assessment-criteria.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Compliance</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">FERPA, GDPR, LTI 1.3</span></span>
+          </a>
+          <a class="nvitem" href="Contact.dc.html">
+            <span style="flex:none;width:40px;height:40px;border-radius:10px;background:#FFF9E9;display:flex;align-items:center;justify-content:center"><img src="assets/illus/comments.svg" alt="" style="width:30px;height:30px;object-fit:contain"></span>
+            <span><span class="nvit" style="display:block;font-size:14.5px;font-weight:600;color:#16181A;transition:color .16s ease">Contact</span><span style="display:block;font-size:12.5px;line-height:1.45;color:#6B7280;margin-top:2px">Help &amp; questions</span></span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <a href="Pricing.dc.html" style="font-size:15px;font-weight:500;color:#3B3F45;padding:10px 14px;border-radius:999px" style-hover="background:#F5F5F7;color:#16181A">Pricing</a>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="Contact.dc.html" style="font-size:15px;font-weight:600;color:#16181A;padding:12px 24px;border:1.5px solid #E2E2E5;border-radius:999px;white-space:nowrap" style-hover="border-color:#F1615C;color:#F1615C">Contact</a>
+      <a href="Demo.dc.html" style="font-size:15px;font-weight:600;color:#fff;background:#F1615C;padding:12px 26px;border-radius:999px;white-space:nowrap;box-shadow:0 12px 32px rgba(241,97,92,0.30)" style-hover="background:#E6534E;color:#fff;transform:translateY(-1px)">Book A Demo</a>
+    </div>
+  </nav>
+
+  <!-- 404 -->
+  <main style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:112px clamp(28px,3.4vw,64px)">
+    <div style="display:flex;align-items:center;gap:8px;font-size:clamp(96px,14vw,160px);font-weight:800;line-height:1;letter-spacing:-0.03em">
+      <span>4</span>
+      <span style="display:inline-flex;width:130px;height:130px;border-radius:50%;border:26px solid #F1615C;box-sizing:border-box"></span>
+      <span>4</span>
+    </div>
+    <h1 style="font-size:clamp(30px,3vw,44px);font-weight:700;letter-spacing:-0.015em;margin:36px 0 14px">Oops! Nothing Was Found</h1>
+    <p style="font-size:18px;line-height:1.6;color:#3B3F45;margin:0 0 36px;max-width:440px">The page you're looking for moved, or never existed. Let's get you back to the good stuff.</p>
+    <a href="Home.dc.html" style="display:inline-flex;font-size:16px;font-weight:600;color:#fff;background:#F1615C;padding:16px 36px;border-radius:999px;white-space:nowrap;box-shadow:0 12px 32px rgba(241,97,92,0.30)" style-hover="background:#E6534E;color:#fff">Back To Home</a>
+  </main>
+
+  <!-- Footer slim -->
+  <footer style="background:#16181A;color:#fff">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;max-width:1280px;margin:0 auto;padding:28px clamp(28px,3.4vw,64px)">
+      <img src="assets/logo-annoto-wordmark-white.png" alt="Annoto" style="height:26px;display:block">
+      <span style="font-size:13px;color:#6B7280">© 2026 Annoto Ltd. All Rights Reserved.</span>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+</body>
+</html>
