@@ -228,7 +228,7 @@
       <div class="device" id="device">
         <div class="chrome">
           <span class="dots"><i></i><i></i><i></i></span>
-          <span class="url">app.annoto.net<b>/course/cs-188</b></span>
+          <span class="url">your-lms.edu<b>/course/cs-188</b></span>
           <span class="stamp"><span class="pulse"></span>Live</span>
         </div>
         <div class="tabs" role="tablist" aria-label="How Annoto works">
