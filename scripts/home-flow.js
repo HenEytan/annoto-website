@@ -222,7 +222,7 @@
     <div class="head">
       <div class="hbar rise"><span class="eyebrow"><span class="dot"></span>How Annoto works</span><span class="hmeta">FOUR STEPS · ONE VIDEO</span></div>
       <h1 class="rise d1">Any video <u>in</u>.<br>Active learning <u>out</u>.</h1>
-      <p class="lede rise d2">Layer Annoto onto a video you already teach with, switch on the features the activity needs, and watch the discussion — and the insight behind it — build right on the timeline.</p>
+      <p class="lede rise d2">Layer Annoto onto a video you already teach with, switch on the features the activity needs, and watch the discussion, and the insight behind it, build right on the timeline.</p>
     </div>
     <div class="wrap rise d3">
       <div class="device" id="device">
@@ -250,7 +250,7 @@
               </div>
               <div class="addcol">
                 <div class="ptitle"><span class="step">STEP 01</span><h3>Start with a video you already have</h3></div>
-                <p class="psub">Paste a link or pick it from your LMS. No re-uploading, no new player — Annoto docks onto the video right where you teach.</p>
+                <p class="psub">Paste a link or pick it from your LMS. No re-uploading, no new player. Annoto docks onto the video right where you teach.</p>
                 <div class="field">
                   <span class="ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></span>
                   <input value="youtube.com/watch?v=cs188-backprop" readonly aria-label="Video URL">
@@ -264,14 +264,14 @@
                   <span class="chip"><span class="sw" style="background:#1AAD19"></span>Vimeo</span>
                   <span class="chip"><span class="sw" style="background:#B7ADBE"></span>Upload</span>
                 </div>
-                <div class="note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p><b>Works everywhere.</b> YouTube, Vimeo, Kaltura, HTML5 and 15+ players — inside Canvas, Moodle, Blackboard, or your own site.</p></div>
+                <div class="note"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><p><b>Works everywhere.</b> YouTube, Vimeo, Kaltura, HTML5 and 15+ players, inside Canvas, Moodle, Blackboard, or your own site.</p></div>
               </div>
             </div>
           </div>
           <div class="panel" id="p1" data-i="1" role="tabpanel" aria-labelledby="tab1">
             <div class="p2">
               <div class="ptitle"><span class="step">STEP 02</span><h3>Switch on what the activity needs</h3></div>
-              <p class="psub">Turn features on with a tap — comments, quizzes, notes, reactions and more. Set defaults for the whole site, one course, or a single video.</p>
+              <p class="psub">Turn features on with a tap: comments, quizzes, notes, reactions and more. Set defaults for the whole site, one course, or a single video.</p>
               <div class="fgrid">
                 <div class="fcard on"><span class="ftile" style="background:#F1615C"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="fname"><b>Comments</b><span>Time-anchored</span></span><span class="tog"></span></div>
                 <div class="fcard on"><span class="ftile" style="background:#7B61FF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3 8-8"/><path d="M21 12a9 9 0 1 1-6.2-8.5"/></svg></span><span class="fname"><b>Quizzes</b><span>In-video Q&amp;A</span></span><span class="tog"></span></div>
@@ -300,14 +300,14 @@
                 </div>
                 <div class="pcontrols">
                   <div class="pscrub"><div class="fill"></div><div class="mk" style="left:22%"></div><div class="mk" style="left:41%"></div><div class="mk" style="left:68%"></div><div class="head"></div></div>
-                  <div class="prow"><span class="pl"></span><span class="tm">12:04 / 24:18</span><span class="ttl">Backpropagation — the chain rule</span></div>
+                  <div class="prow"><span class="pl"></span><span class="tm">12:04 / 24:18</span><span class="ttl">Backpropagation: the chain rule</span></div>
                 </div>
               </div>
               <div class="widget soft">
                 <div class="wtabs"><b>Discussion</b><span>Notes</span><span>Quiz</span></div>
                 <div class="wbody">
-                  <div class="cmt"><span class="av" style="background:#7B61FF">TP</span><div class="cbody"><div class="cmeta"><b>Tom Preece</b><span class="ts">08:32</span></div><p>Wait — why do we transpose the weight matrix here?</p></div></div>
-                  <div class="cmt"><span class="av" style="background:#12B5AD">MR</span><div class="cbody"><div class="cmeta"><b>Dr. Reyes</b><span class="ts">08:41</span></div><p>Good catch — it lines the gradients up with the inputs. ↩ 3 replies</p></div></div>
+                  <div class="cmt"><span class="av" style="background:#7B61FF">TP</span><div class="cbody"><div class="cmeta"><b>Tom Preece</b><span class="ts">08:32</span></div><p>Wait, why do we transpose the weight matrix here?</p></div></div>
+                  <div class="cmt"><span class="av" style="background:#12B5AD">MR</span><div class="cbody"><div class="cmeta"><b>Dr. Reyes</b><span class="ts">08:41</span></div><p>Good catch. It lines the gradients up with the inputs. ↩ 3 replies</p></div></div>
                   <div class="quiz"><div class="qh"><b>Question 3 of 5</b><span>12:00</span></div><p>What does the chain rule let us compute here?</p><div class="qopt"><i>Loss</i><i class="sel">Gradients</i><i>Weights</i></div></div>
                   <div class="winput"><span>Add a comment at 12:04…</span><b><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></b></div>
                 </div>
@@ -316,7 +316,7 @@
           </div>
           <div class="panel" id="p3" data-i="3" role="tabpanel" aria-labelledby="tab3">
             <div class="p4">
-              <div class="ptitle"><span class="step">STEP 04</span><h3>See exactly what happened — moment by moment</h3></div>
+              <div class="ptitle"><span class="step">STEP 04</span><h3>See exactly what happened, moment by moment</h3></div>
               <div class="stats">
                 <div class="stat"><div class="k">Avg engagement</div><div class="v">87<i>%</i></div><div class="d up">▲ 18 pts vs. plain video</div><canvas data-spark="1"></canvas></div>
                 <div class="stat"><div class="k">Completion</div><div class="v">92<i>%</i></div><div class="d up">▲ 9 pts</div><canvas data-spark="2"></canvas></div>
