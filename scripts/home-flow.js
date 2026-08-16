@@ -386,10 +386,14 @@
     addEventListener('resize', function(){ moveGlider(); if(cur===3){drawCharts(); drawCurve();} });
 
     var stage=R.querySelector('#stage');
-    if(reduce){ stage.classList.add('in'); moveGlider(); }
+    function reveal(){ if(stage.classList.contains('in')) return; stage.classList.add('in'); moveGlider(); restart(); }
+    if(reduce){ reveal(); }
     else{
-      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ stage.classList.add('in'); io.disconnect(); setTimeout(moveGlider,60); restart(); } }); },{threshold:.2});
-      io.observe(stage);
+      try{
+        var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ io.disconnect(); reveal(); setTimeout(moveGlider,60); } }); },{threshold:.12});
+        io.observe(stage);
+      }catch(e){ reveal(); }
+      setTimeout(reveal, 1800); /* failsafe: never leave the section hidden */
     }
     setTimeout(moveGlider,90);
 
