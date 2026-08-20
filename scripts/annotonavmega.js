@@ -29,7 +29,7 @@
     resources:{cls:'axm-res4',
       columns:[
         {icon:'plug',title:'INTEGRATE',items:[
-          ['Any LMS','LTI 1.1 &amp; 1.3, or any site','/any-lms'],
+          ['Any LMS','LTI 1.1 &amp; 1.3, or any site','/integrations'],
           ['Any Video Host','YouTube, Vimeo, Kaltura &amp; more','/any-video-host'],
           ['Developers','SDK, API &amp; webhooks','/developers'],
           ['Annoto MCP','Connect AI assistants','/developers','New'],
@@ -86,30 +86,30 @@
           ['STEM','','/stem'],['Business','','/business-schools'],
           ['Language','','/language-learning'],['Communication','','/communication']]},
         {icon:'learn',title:'BY LEARNING JOURNEY',items:[
-          ['Self Learning','Private notes &amp; reflection','/self-learning'],
-          ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/feedback-assessment'],
-          ['Collaboration &amp; Engagement','Discussion on the video','/collaborative-learning'],
-          ["Learners' Video Submission",'Peer review &amp; skills','/learners-video-submission'],
-          ['All Learning Journeys','See the full path','/learning-journeys','New']]}
+          ['Self Learning','Private notes &amp; reflection','/notes-summaries'],
+          ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/in-video-quizzes'],
+          ['Collaboration &amp; Engagement','Discussion on the video','/discussions-comments'],
+          ["Learners' Video Submission",'Peer review &amp; skills','/video-assignments'],
+          ['All Learning Journeys','See the full path','/product-tour','New']]}
       ]},
     integrations:{cls:'axm-solutions',
       columns:[
         {icon:'plug',title:'LMS INTEGRATIONS',items:[
-          ['Any LMS','LTI 1.1 &amp; 1.3, or any site','/any-lms'],
+          ['Any LMS','LTI 1.1 &amp; 1.3, or any site','/integrations'],
           ['Canvas','LTI 1.3 for Canvas','/integrations-canvas'],
           ['Moodle','LTI 1.3 for Moodle','/integrations-moodle'],
           ['Blackboard','LTI 1.3 for Blackboard','/integrations-blackboard'],
           ['Brightspace / D2L','LTI 1.3 for D2L','/integrations-brightspace'],
-          ['Open edX','LTI 1.3 for Open edX','/integrations-openedx'],
-          ['Schoology','LTI 1.3 for Schoology','/integrations-schoology']]},
+          ['Open edX','LTI 1.3 for Open edX','/integrations'],
+          ['Schoology','LTI 1.3 for Schoology','/integrations']]},
         {icon:'video',title:'ANY VIDEO HOST',items:[
           ['Any Video Host','YouTube, Vimeo, Kaltura &amp; more','/any-video-host'],
-          ['Kaltura','In-video engagement','/integrations-kaltura'],
-          ['YouTube','Active learning on YouTube','/integrations-youtube'],
-          ['Vimeo','Interactive Vimeo video','/integrations-vimeo'],
-          ['Wistia','Two-way Wistia video','/integrations-wistia'],
-          ['Brightcove','Engagement on Brightcove','/integrations-brightcove'],
-          ['Panopto','Two-way lecture capture','/integrations-panopto']]},
+          ['Kaltura','In-video engagement','/any-video-host'],
+          ['YouTube','Active learning on YouTube','/any-video-host'],
+          ['Vimeo','Interactive Vimeo video','/any-video-host'],
+          ['Wistia','Two-way Wistia video','/any-video-host'],
+          ['Brightcove','Engagement on Brightcove','/any-video-host'],
+          ['Panopto','Two-way lecture capture','/any-video-host']]},
         {icon:'ai',title:'DEVELOPERS',items:[
           ['Developers','SDK, API &amp; webhooks','/developers'],
           ['Annoto MCP','Connect AI assistants','/developers','New'],
@@ -126,7 +126,7 @@
         {icon:'handshake',title:'PARTNERS',items:[
           ['Partners','Platform &amp; channel','/partners'],
           ['Join as a Partner','Build with Annoto','/partners'],
-          ['Platforms &amp; Ecosystem','Kaltura, D2L, Canvas &amp; more','/platform-partners']]},
+          ['Platforms &amp; Ecosystem','Kaltura, D2L, Canvas &amp; more','/partners']]},
         {icon:'briefcase',title:'COMPANY',items:[
           ['About Annoto','Our mission &amp; story','/about'],
           ['Contact','Talk to our team','/contact'],
