@@ -90,7 +90,7 @@
           ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/in-video-quizzes'],
           ['Collaboration &amp; Engagement','Discussion on the video','/discussions-comments'],
           ["Learners' Video Submission",'Peer review &amp; skills','/video-assignments'],
-          ['All Learning Journeys','See the full path','/product-tour','New']]}
+          ['All Learning Journeys','See the full path','/learning-journeys','New']]}
       ]},
     integrations:{cls:'axm-solutions',
       columns:[
