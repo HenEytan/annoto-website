@@ -71,6 +71,12 @@
       ],cards:true},
     solutions:{cls:'axm-solutions',
       columns:[
+        {icon:'learn',title:'BY LEARNING JOURNEY',items:[
+          ['Self Learning','Private notes &amp; reflection','/notes-summaries'],
+          ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/in-video-quizzes'],
+          ['Collaboration &amp; Engagement','Discussion on the video','/discussions-comments'],
+          ["Learners' Video Submission",'Peer review &amp; skills','/video-assignments'],
+          ['All Learning Journeys','See the full path','/learning-journeys','New']]},
         {icon:'people',title:'BY ROLE',items:[
           ['Faculty','Engagement you can see','/for-faculty'],
           ['Academic Leaders','Outcomes at scale','/for-leaders'],
@@ -81,16 +87,13 @@
           ['K-12 Schools','Safe, guided participation','/k-12'],
           ['Corporate Learning','Training that sticks','/corporate-learning'],
           ['Media &amp; Communities','Audiences that talk back','/media-communities']]},
-        {icon:'book',title:'BY DISCIPLINE',compact:true,items:[
-          ['Nursing','','/nursing-education'],['Teacher Ed.','','/teacher-education'],
-          ['STEM','','/stem'],['Business','','/business-schools'],
-          ['Language','','/language-learning'],['Communication','','/communication']]},
-        {icon:'learn',title:'BY LEARNING JOURNEY',items:[
-          ['Self Learning','Private notes &amp; reflection','/notes-summaries'],
-          ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/in-video-quizzes'],
-          ['Collaboration &amp; Engagement','Discussion on the video','/discussions-comments'],
-          ["Learners' Video Submission",'Peer review &amp; skills','/video-assignments'],
-          ['All Learning Journeys','See the full path','/learning-journeys','New']]}
+        {icon:'book',title:'BY DISCIPLINE',items:[
+          ['Nursing','Clinical skills, reviewed frame by frame','/nursing-education'],
+          ['Teacher Education','Classroom practice on the timeline','/teacher-education'],
+          ['STEM','Worked problems, checked as they watch','/stem'],
+          ['Business Schools','Cases, pitches &amp; team critique','/business-schools'],
+          ['Language Learning','Speaking practice with time-coded notes','/language-learning'],
+          ['Communication','Presentations that get better each take','/communication']]}
       ]},
     integrations:{cls:'axm-solutions',
       columns:[
@@ -119,14 +122,14 @@
       feat:{media:motifFeature,eyebrow:'New',title:'Annoto MCP',sub:'Connect AI assistants to Annoto.',cta:'Explore',href:'/developers'}},
     customers:{cls:'axm-resources',
       columns:[
-        {icon:'people',title:'CUSTOMERS',items:[
-          ['Customers','Stories &amp; case studies','/customers'],
+        {icon:'check',title:'WHY ANNOTO',items:[
           ['Why Annoto','How we compare','/why-annoto'],
-          ['Research &amp; Evidence','What the studies show','/research']]},
-        {icon:'handshake',title:'PARTNERS',items:[
+          ['Research &amp; Evidence','What the studies show','/research'],
+          ['Use Cases','Real courses, real results','/blog']]},
+        {icon:'people',title:'CUSTOMERS &amp; PARTNERS',items:[
+          ['Customers','Stories &amp; case studies','/customers'],
           ['Partners','Platform &amp; channel','/partners'],
-          ['Join as a Partner','Build with Annoto','/partners'],
-          ['Platforms &amp; Ecosystem','Kaltura, D2L, Canvas &amp; more','/partners']]},
+          ['Platforms &amp; Ecosystem','Kaltura, D2L, Canvas &amp; more','/platform-partners']]},
         {icon:'briefcase',title:'COMPANY',items:[
           ['About Annoto','Our mission &amp; story','/about'],
           ['Contact','Talk to our team','/contact'],
