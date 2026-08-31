@@ -125,7 +125,8 @@
         {icon:'check',title:'WHY ANNOTO',items:[
           ['Why Annoto','How we compare','/why-annoto'],
           ['Research &amp; Evidence','What the studies show','/research'],
-          ['Use Cases','Real courses, real results','/blog']]},
+          ['Use Cases','Real courses, real results','/blog'],
+          ['Compare Annoto','Annoto vs Panopto, Kaltura &amp; more','/why-annoto#compare']]},
         {icon:'people',title:'CUSTOMERS &amp; PARTNERS',items:[
           ['Customers','Stories &amp; case studies','/customers'],
           ['Partners','Platform &amp; channel','/partners'],
