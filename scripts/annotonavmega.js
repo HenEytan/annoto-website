@@ -157,7 +157,7 @@
     return '<a class="axm-feat" href="'+f.href+'"><span class="axm-feat-media">'+f.media+'<span class="axm-feat-eye">'+f.eyebrow+'</span></span><span class="axm-feat-body"><span class="axm-feat-title">'+f.title+'</span><span class="axm-feat-sub">'+f.sub+'</span><span class="axm-feat-cta">'+f.cta+' '+ARW+'</span></span></a>';
   }
   function ctaBar(){
-    return '<div class="axm-cta"><div class="axm-cta-l"><a href="/product-tour">Product tour</a><span class="axm-cta-sep"></span><a href="/contact">Talk to an expert</a><span class="axm-cta-sep"></span><a href="https://docs.annoto.net/guides">Help Center</a><span class="axm-cta-sep"></span><a href="/follow">Follow us</a></div><div class="axm-cta-r"><form class="axm-sub" data-anr-sub novalidate><input class="axm-sub-in" type="email" name="email" placeholder="Get product updates" aria-label="Email address"><button class="axm-sub-btn" type="submit">Subscribe</button><span class="anr-sub-fine" role="status" aria-live="polite"></span></form><a class="axm-cta-get" href="/demo">Book a demo '+ARW+'</a></div></div>';
+    return '<div class="axm-cta"><div class="axm-cta-l"><a href="/product-tour">Product tour</a><span class="axm-cta-sep"></span><a href="/contact">Talk to an expert</a><span class="axm-cta-sep"></span><a href="https://docs.annoto.net/guides">Help Center</a><span class="axm-cta-sep"></span><a href="/follow">Follow us</a></div><div class="axm-cta-r"><form class="axm-sub" novalidate><input class="axm-sub-in" type="email" name="email" placeholder="Get product updates" aria-label="Email address"><button class="axm-sub-btn" type="submit">Subscribe</button><span class="anr-sub-fine" role="status" aria-live="polite"></span></form><a class="axm-cta-get" href="/demo">Book a demo '+ARW+'</a></div></div>';
   }
   function panelInner(key){
     var m=MENUS[key];
@@ -297,6 +297,23 @@
     });
     return mapped>0;
   }
+
+  // Newsletter subscribe (mega-menu bottom bar) — posts to the Annoto worker.
+  document.addEventListener('submit',function(e){
+    var f=e.target;if(!f||!f.matches||!f.matches('form.axm-sub'))return;
+    e.preventDefault();
+    var input=f.querySelector('input[type=email],input[name=email]');
+    var email=((input&&input.value)||'').trim();
+    var fine=f.querySelector('.anr-sub-fine');
+    function say(t,ok){if(fine){fine.textContent=t;fine.style.color=ok?'#7CD992':'#F4BC3E';}}
+    if(!email||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){say('Enter a valid email address.',false);return;}
+    var btn=f.querySelector('button');if(btn)btn.disabled=true;
+    fetch('https://holy-moon-3de9.annoto-team.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})})
+      .then(function(r){return r.json().catch(function(){return {};});})
+      .then(function(j){if(j&&j.ok){say('Subscribed — thank you!',true);f.reset();}else{say('Sign-up is not fully connected yet.',false);}})
+      .catch(function(){say('Something went wrong. Please try again.',false);})
+      .then(function(){if(btn)btn.disabled=false;});
+  },true);
 
   if(document.readyState!=='loading'){inject();}else{document.addEventListener('DOMContentLoaded',inject);}
   var tries=0,iv=setInterval(function(){tries++;var nav=document.querySelector('nav.anr-nav');if(nav&&nav.querySelectorAll('[data-axm="1"]').length>=5||tries>24){clearInterval(iv);}else{inject();}},250);
