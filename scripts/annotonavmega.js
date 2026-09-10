@@ -157,7 +157,7 @@
     return '<a class="axm-feat" href="'+f.href+'"><span class="axm-feat-media">'+f.media+'<span class="axm-feat-eye">'+f.eyebrow+'</span></span><span class="axm-feat-body"><span class="axm-feat-title">'+f.title+'</span><span class="axm-feat-sub">'+f.sub+'</span><span class="axm-feat-cta">'+f.cta+' '+ARW+'</span></span></a>';
   }
   function ctaBar(){
-    return '<div class="axm-cta"><div class="axm-cta-l"><a href="/product-tour">Product tour</a><span class="axm-cta-sep"></span><a href="/contact">Talk to an expert</a><span class="axm-cta-sep"></span><a href="https://docs.annoto.net/guides">Help Center</a><span class="axm-cta-sep"></span><a href="/follow">Follow us</a></div><a class="axm-cta-get" href="/demo">Book a demo '+ARW+'</a></div>';
+    return '<div class="axm-cta"><div class="axm-cta-l"><a href="/product-tour">Product tour</a><span class="axm-cta-sep"></span><a href="/contact">Talk to an expert</a><span class="axm-cta-sep"></span><a href="https://docs.annoto.net/guides">Help Center</a><span class="axm-cta-sep"></span><a href="/follow">Follow us</a></div><div class="axm-cta-r"><form class="axm-sub" data-anr-sub novalidate><input class="axm-sub-in" type="email" name="email" placeholder="Get product updates" aria-label="Email address"><button class="axm-sub-btn" type="submit">Subscribe</button><span class="anr-sub-fine" role="status" aria-live="polite"></span></form><a class="axm-cta-get" href="/demo">Book a demo '+ARW+'</a></div></div>';
   }
   function panelInner(key){
     var m=MENUS[key];
@@ -217,6 +217,15 @@
    +'.anr-nav .axm-cta-get{display:inline-flex;align-items:center;gap:7px;font:700 14px/1 Poppins,Arial,sans-serif;color:#fff;background:#f1615c;padding:9px 17px;border-radius:10px;text-decoration:none;box-shadow:0 8px 20px -8px rgba(241,97,92,.7);transition:background .2s,transform .12s}'
    +'.anr-nav .axm-cta-get:hover{background:#c8443f;transform:translateY(-1px)}'
    +'.anr-nav .axm-cta-get .axm-arw{color:#fff}'
+   +'.anr-nav .axm-cta-r{display:flex;align-items:center;gap:12px}'
+   +'.anr-nav .axm-sub{display:flex;align-items:center;position:relative}'
+   +'.anr-nav .axm-sub-in{width:168px;height:36px;padding:0 12px;border:1px solid rgba(255,255,255,.22);border-right:none;border-radius:9px 0 0 9px;background:rgba(255,255,255,.08);color:#fff;font:500 13px/1 Arial,sans-serif;outline:none}'
+   +'.anr-nav .axm-sub-in::placeholder{color:rgba(255,255,255,.55)}'
+   +'.anr-nav .axm-sub-in:focus{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.12)}'
+   +'.anr-nav .axm-sub-btn{height:36px;padding:0 15px;border:1px solid rgba(255,255,255,.22);border-radius:0 9px 9px 0;background:rgba(255,255,255,.16);color:#fff;font:700 13px/1 Poppins,Arial,sans-serif;cursor:pointer;transition:background .2s}'
+   +'.anr-nav .axm-sub-btn:hover{background:rgba(255,255,255,.28)}'
+   +'.anr-nav .anr-sub-fine{position:absolute;left:0;bottom:calc(100% + 7px);padding:4px 9px;border-radius:7px;background:#16181a;font:600 11px/1.3 Arial,sans-serif;white-space:nowrap;box-shadow:0 8px 20px -8px rgba(0,0,0,.55)}'
+   +'.anr-nav .anr-sub-fine:empty{display:none}'
    +'.anr-nav .nvdd.axm-syn{position:static!important;display:flex;align-items:center}'
    +'.anr-nav .nvdd.axm-syn>.axm-syntrig{cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap}'
    +'.anr-nav .axm-synchev{margin-left:5px;width:9px;height:9px;opacity:.55;flex:0 0 auto}'
