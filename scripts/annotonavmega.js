@@ -151,7 +151,7 @@
     return '<div class="axm-col'+(c.compact?' axm-compact':'')+'"><div class="axm-ch"><span class="axm-ico">'+svg(IC[c.icon])+'</span><span class="axm-ct">'+c.title+'</span></div><div class="axm-list">'+c.items.map(linkHTML).join('')+'</div></div>';
   }
   function productCards(){
-    return '<div class="axm-cards"><a class="axm-card" href="/security"><span class="axm-card-h">Security &amp; Compliance '+ARW+'</span><span class="axm-card-sub">Enterprise-grade, built for education.</span><span class="axm-ticks"><span class="axm-tick">'+TICK+' FERPA</span><span class="axm-tick">'+TICK+' GDPR &amp; DPA</span><span class="axm-tick">'+TICK+' LTI 1.3</span><span class="axm-tick">'+TICK+' WCAG 2.1 AA</span><span class="axm-tick">'+TICK+' ISO 27001</span></span></a><a class="axm-card axm-feature" href="/features"><span class="axm-fc-text"><span class="axm-card-h">All features '+ARW+'</span><span class="axm-card-sub">One engagement layer for any video.</span></span><span class="axm-motif">'+motifFeature+'</span></a></div>';
+    return '<div class="axm-cards"><a class="axm-card" href="/security"><span class="axm-card-h">Security &amp; Compliance '+ARW+'</span><span class="axm-card-sub">Enterprise-grade, built for education.</span><span class="axm-ticks"><span class="axm-tick">'+TICK+' FERPA</span><span class="axm-tick">'+TICK+' GDPR &amp; DPA</span><span class="axm-tick">'+TICK+' LTI 1.3</span><span class="axm-tick">'+TICK+' WCAG 2.1 AA</span><span class="axm-tick">'+TICK+' ISO 27001</span></span></a><a class="axm-card axm-compare" href="/alternatives"><span class="axm-card-h">Compare Annoto '+ARW+'</span><span class="axm-card-sub">How Annoto fits with, or replaces, the tools you already run.</span><span class="axm-ticks"><span class="axm-tick axm-vs">Panopto</span><span class="axm-tick axm-vs">Kaltura</span><span class="axm-tick axm-vs">YuJa</span><span class="axm-tick axm-vs">GoReact</span><span class="axm-tick axm-vs">PlayPosit</span><span class="axm-tick axm-vs axm-vs-more">+6 more</span></span></a><a class="axm-card axm-feature" href="/features"><span class="axm-fc-text"><span class="axm-card-h">All features '+ARW+'</span><span class="axm-card-sub">One engagement layer for any video.</span></span><span class="axm-motif">'+motifFeature+'</span></a></div>';
   }
   function featCard(f){
     return '<a class="axm-feat" href="'+f.href+'"><span class="axm-feat-media">'+f.media+'<span class="axm-feat-eye">'+f.eyebrow+'</span></span><span class="axm-feat-body"><span class="axm-feat-title">'+f.title+'</span><span class="axm-feat-sub">'+f.sub+'</span><span class="axm-feat-cta">'+f.cta+' '+ARW+'</span></span></a>';
@@ -186,7 +186,7 @@
    +'.anr-nav .axm-d{display:block;font:400 12px/1.35 Arial,sans-serif;color:#59616f;margin-top:2px}'
    +'.anr-nav .axm-pill{font:700 10px/1.4 Poppins,Arial,sans-serif;letter-spacing:.03em;text-transform:uppercase;color:#c8443f;background:#fdecec;border:1px solid #f6c9c7;padding:1px 6px;border-radius:999px}'
    +'.anr-nav .axm-compact .axm-list{display:grid;grid-template-columns:1fr 1fr;gap:1px 14px;align-content:start}'
-   +'.anr-nav .axm-cards{display:grid;grid-template-columns:.9fr 1.55fr;gap:16px;margin-top:20px;padding-top:20px;border-top:1px solid #e9ebf1}'
+   +'.anr-nav .axm-cards{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:16px;margin-top:20px;padding-top:20px;border-top:1px solid #e9ebf1}'
    +'.anr-nav .axm-card{display:block;border:1px solid #dfe2ea;border-radius:14px;padding:17px 18px;background:#f4f6fa;text-decoration:none;transition:border-color .15s,transform .15s;position:relative;overflow:hidden}'
    +'.anr-nav .axm-card:hover{border-color:#f6c9c7;transform:translateY(-2px)}'
    +'.anr-nav .axm-card-h{display:flex;align-items:center;gap:7px;font:700 14.5px/1.2 Poppins,Arial,sans-serif;color:#14171c}'
@@ -196,6 +196,7 @@
    +'.anr-nav .axm-ticks{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}'
    +'.anr-nav .axm-tick{display:inline-flex;align-items:center;gap:5px;font:600 12px/1 Poppins,Arial,sans-serif;color:#14171c;background:#fff;border:1px solid #dfe2ea;padding:4px 9px 4px 7px;border-radius:999px}'
    +'.anr-nav .axm-tk{width:13px;height:13px;color:#12b886}'
+   +'.anr-nav .axm-vs{padding:4px 9px} .anr-nav .axm-vs-more{color:#59616f;background:transparent;border-style:dashed}'
    +'.anr-nav .axm-feature{display:flex;align-items:center;gap:16px;padding-right:0}'
    +'.anr-nav .axm-fc-text{flex:0 0 auto;max-width:46%}'
    +'.anr-nav .axm-motif{flex:1;align-self:stretch;position:relative;min-height:116px}'
