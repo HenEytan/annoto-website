@@ -1,4 +1,4 @@
-/* AnnotoNavMega 1.17.0 (2026-09-22): removed the 'Get product updates' subscribe box from the mega-menu bottom bar. It had no working destination (it posted to a retired Cloudflare worker) and HubSpot's form collector counted every click on it as a website submission. Newsletter signup lives in the footer form and blog CTAs, which post to INBOX. */
+/* AnnotoNavMega 1.18.0 (2026-09-22): based on 1.17.0 (Video Completion menu item). Removes the 'Get product updates' subscribe box from the mega-menu bottom bar: it posted to a retired Cloudflare worker and HubSpot's form collector counted every click on it as a website submission. Newsletter signup lives in the footer form and blog CTAs, which post to INBOX. */
 (function(){
   if(window.__axmNav) return; window.__axmNav=1;
 
@@ -67,6 +67,7 @@
         {icon:'chart',title:'MEASURE',items:[
           ['Engagement Analytics','Where learners lean in','/analytics'],
           ['Attention &amp; Comprehension','Heatmaps &amp; scores','/attention-comprehension'],
+          ['Video Completion','Who watched, and how much','/video-completion','New'],
           ['Completion &amp; Gradebook','Synced to your LMS','/completion-gradebook'],
           ['Analytics Export','Take the data anywhere','/analytics-export']]}
       ],cards:true},
