@@ -1,3 +1,4 @@
+/* AnnotoNavMega 1.17.0 (2026-09-22): removed the 'Get product updates' subscribe box from the mega-menu bottom bar. It had no working destination (it posted to a retired Cloudflare worker) and HubSpot's form collector counted every click on it as a website submission. Newsletter signup lives in the footer form and blog CTAs, which post to INBOX. */
 (function(){
   if(window.__axmNav) return; window.__axmNav=1;
 
@@ -157,7 +158,7 @@
     return '<a class="axm-feat" href="'+f.href+'"><span class="axm-feat-media">'+f.media+'<span class="axm-feat-eye">'+f.eyebrow+'</span></span><span class="axm-feat-body"><span class="axm-feat-title">'+f.title+'</span><span class="axm-feat-sub">'+f.sub+'</span><span class="axm-feat-cta">'+f.cta+' '+ARW+'</span></span></a>';
   }
   function ctaBar(){
-    return '<div class="axm-cta"><div class="axm-cta-l"><a href="/product-tour">Product tour</a><span class="axm-cta-sep"></span><a href="/contact">Talk to an expert</a><span class="axm-cta-sep"></span><a href="https://docs.annoto.net/guides">Help Center</a><span class="axm-cta-sep"></span><a href="/follow">Follow us</a></div><div class="axm-cta-r"><form class="axm-sub" novalidate><input class="axm-sub-in" type="email" name="email" placeholder="Get product updates" aria-label="Email address"><button class="axm-sub-btn" type="submit">Subscribe</button><span class="anr-sub-fine" role="status" aria-live="polite"></span></form><a class="axm-cta-get" href="/demo">Book a demo '+ARW+'</a></div></div>';
+    return '<div class="axm-cta"><div class="axm-cta-l"><a href="/product-tour">Product tour</a><span class="axm-cta-sep"></span><a href="/contact">Talk to an expert</a><span class="axm-cta-sep"></span><a href="https://docs.annoto.net/guides">Help Center</a><span class="axm-cta-sep"></span><a href="/follow">Follow us</a></div><div class="axm-cta-r"><a class="axm-cta-get" href="/demo">Book a demo '+ARW+'</a></div></div>';
   }
   function panelInner(key){
     var m=MENUS[key];
@@ -219,14 +220,6 @@
    +'.anr-nav .axm-cta-get:hover{background:#c8443f;transform:translateY(-1px)}'
    +'.anr-nav .axm-cta-get .axm-arw{color:#fff}'
    +'.anr-nav .axm-cta-r{display:flex;align-items:center;gap:12px}'
-   +'.anr-nav .axm-sub{display:flex;align-items:center;position:relative}'
-   +'.anr-nav .axm-sub-in{width:168px;height:36px;padding:0 12px;border:1px solid rgba(255,255,255,.22);border-right:none;border-radius:9px 0 0 9px;background:rgba(255,255,255,.08);color:#fff;font:500 13px/1 Arial,sans-serif;outline:none}'
-   +'.anr-nav .axm-sub-in::placeholder{color:rgba(255,255,255,.55)}'
-   +'.anr-nav .axm-sub-in:focus{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.12)}'
-   +'.anr-nav .axm-sub-btn{height:36px;padding:0 15px;border:1px solid rgba(255,255,255,.22);border-radius:0 9px 9px 0;background:rgba(255,255,255,.16);color:#fff;font:700 13px/1 Poppins,Arial,sans-serif;cursor:pointer;transition:background .2s}'
-   +'.anr-nav .axm-sub-btn:hover{background:rgba(255,255,255,.28)}'
-   +'.anr-nav .anr-sub-fine{position:absolute;left:0;bottom:calc(100% + 7px);padding:4px 9px;border-radius:7px;background:#16181a;font:600 11px/1.3 Arial,sans-serif;white-space:nowrap;box-shadow:0 8px 20px -8px rgba(0,0,0,.55)}'
-   +'.anr-nav .anr-sub-fine:empty{display:none}'
    +'.anr-nav .nvdd.axm-syn{position:static!important;display:flex;align-items:center}'
    +'.anr-nav .nvdd.axm-syn>.axm-syntrig{cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap}'
    +'.anr-nav .axm-synchev{margin-left:5px;width:9px;height:9px;opacity:.55;flex:0 0 auto}'
@@ -299,22 +292,6 @@
     return mapped>0;
   }
 
-  // Newsletter subscribe (mega-menu bottom bar) — posts to the Annoto worker.
-  document.addEventListener('submit',function(e){
-    var f=e.target;if(!f||!f.matches||!f.matches('form.axm-sub'))return;
-    e.preventDefault();
-    var input=f.querySelector('input[type=email],input[name=email]');
-    var email=((input&&input.value)||'').trim();
-    var fine=f.querySelector('.anr-sub-fine');
-    function say(t,ok){if(fine){fine.textContent=t;fine.style.color=ok?'#7CD992':'#F4BC3E';}}
-    if(!email||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){say('Enter a valid email address.',false);return;}
-    var btn=f.querySelector('button');if(btn)btn.disabled=true;
-    fetch('https://holy-moon-3de9.annoto-team.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})})
-      .then(function(r){return r.json().catch(function(){return {};});})
-      .then(function(j){if(j&&j.ok){say('Subscribed — thank you!',true);f.reset();}else{say('Sign-up is not fully connected yet.',false);}})
-      .catch(function(){say('Something went wrong. Please try again.',false);})
-      .then(function(){if(btn)btn.disabled=false;});
-  },true);
 
   if(document.readyState!=='loading'){inject();}else{document.addEventListener('DOMContentLoaded',inject);}
   var tries=0,iv=setInterval(function(){tries++;var nav=document.querySelector('nav.anr-nav');if(nav&&nav.querySelectorAll('[data-axm="1"]').length>=5||tries>24){clearInterval(iv);}else{inject();}},250);
