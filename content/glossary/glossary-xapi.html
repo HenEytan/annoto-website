@@ -1,0 +1,34 @@
+<!--
+slug: glossary-xapi
+term: xAPI (Experience API)
+seo_title: What Is xAPI? — Experience API Explained for Learning Teams
+seo_description: xAPI records learning activity as actor-verb-object statements in a Learning Record Store. How it differs from SCORM and LTI, and what it means for video.
+h1: What Is xAPI (Experience API)?
+sub: xAPI is a specification for recording learning activity as simple statements, such as "Maria answered question 3", and storing them in a Learning Record Store. It lets data from many tools, including video, be collected in one place outside any single LMS.
+term_definition: The Experience API, a learning technology specification that records learning experiences as actor-verb-object statements and stores them in a Learning Record Store (LRS) for analysis across systems.
+chips: /analytics-export|Analytics Export & API; /glossary-lti-1-3|LTI 1.3; /glossary-video-learning-analytics|Video Learning Analytics; /developers|Developers
+cta_p: Bring your data questions to a 20-minute demo and see which engagement data Annoto can export and how it connects to your stack.
+-->
+<div class="anr-glo-body">
+<p class="anr-glo-p">For years, learning data lived inside the LMS: a course was a SCORM package, and the LMS recorded whether it was completed and what score was achieved. Learning increasingly happens elsewhere, in video platforms, simulations, mobile apps and on the job. xAPI, the Experience API, was created to capture that activity wherever it happens. It was developed under the US Advanced Distributed Learning (ADL) Initiative, originally as Project Tin Can, and version 1.0 was released in 2013. It has since been advanced as an IEEE standard.</p>
+<h2 class="anr-glo-h2">How xAPI works</h2>
+<p class="anr-glo-p">Each piece of activity is recorded as a statement with three core parts: an actor (who), a verb (did what) and an object (to what), for example "Maria completed Lecture 4" or "Sam answered Question 2 correctly". Statements can carry extra detail such as a score, a duration or a timestamp in a video. They are sent to a Learning Record Store (LRS), a database built to receive and query xAPI statements. The LRS can sit inside an LMS or stand alone, and reporting tools read from it.</p>
+<div class="anr-glo-ext">
+<h2 class="anr-glo-h2">xAPI, SCORM, LTI and Caliper compared</h2>
+<table class="anr-glo-table"><thead><tr><th class="anr-glo-th">Standard</th><th class="anr-glo-th">Main job</th><th class="anr-glo-th">Where data goes</th></tr></thead><tbody>
+<tr><td class="anr-glo-td">SCORM</td><td class="anr-glo-td">Package content so an LMS can launch it and track completion and score</td><td class="anr-glo-td">The LMS</td></tr>
+<tr><td class="anr-glo-td">LTI 1.3</td><td class="anr-glo-td">Securely launch an external tool from the LMS and pass grades and rosters</td><td class="anr-glo-td">The LMS gradebook</td></tr>
+<tr><td class="anr-glo-td">xAPI</td><td class="anr-glo-td">Record detailed activity from any tool or context</td><td class="anr-glo-td">A Learning Record Store</td></tr>
+<tr><td class="anr-glo-td">Caliper Analytics</td><td class="anr-glo-td">Emit learning events in a common vocabulary, maintained by 1EdTech</td><td class="anr-glo-td">An institution's event store or analytics platform</td></tr>
+</tbody></table>
+</div>
+<h2 class="anr-glo-h2">What xAPI means for video</h2>
+<p class="anr-glo-p">Video is one of the richest sources of learning data and one of the least used. A standard video player reports that a video was played. An engagement layer can report which segments were watched and re-watched, which questions were answered, and where learners commented or took notes. Standards such as xAPI and Caliper make it possible to bring that data into institution-wide analytics. When evaluating any video tool, ask what events it can export, in what format, and whether data can flow to your LRS or data warehouse. Annoto provides <a href="/analytics-export">analytics export and an API</a>; talk to our team about the formats your stack needs.</p>
+<h2 class="anr-glo-h2">Frequently asked questions</h2>
+<h3 class="anr-glo-h3">Is xAPI replacing SCORM?</h3>
+<p class="anr-glo-p">Not entirely. SCORM is still widely used to package and track self-paced courses in an LMS. xAPI covers what SCORM cannot, such as activity outside the LMS, offline learning and fine-grained events, and many organisations use both.</p>
+<h3 class="anr-glo-h3">What is a Learning Record Store?</h3>
+<p class="anr-glo-p">A Learning Record Store (LRS) is a system that receives, stores and returns xAPI statements. It can be built into an LMS or run as a separate service, and it is where reporting and analytics tools read xAPI data from.</p>
+<h3 class="anr-glo-h3">Do I need xAPI if my tools support LTI 1.3?</h3>
+<p class="anr-glo-p">They solve different problems. LTI 1.3 handles secure launch, roster and grade exchange with the LMS. xAPI captures detailed activity for analytics. Many institutions rely on LTI for integration and use tool exports or xAPI for deeper analysis.</p>
+</div>
