@@ -8,9 +8,9 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const MID = 'G-RB2LBDL082';
-const FILE = path.join(__dirname, 'annotoconsent-1.5.0.js');
+const FILE = path.join(__dirname, 'annotoconsent-1.5.1.js');
 
-function browser({ host = 'www.annoto.net', ua = 'Mozilla/5.0 Chrome/141', w = 1920, h = 1080, nativeTag = false, consent = null } = {}) {
+function browser({ host = 'www.annoto.net', ua = 'Mozilla/5.0 Chrome/141', w = 1920, h = 1080, nativeTag = false, nativeQueued = false, consent = null } = {}) {
   const listeners = {};
   const appended = [];
   const clarityCalls = [];
@@ -39,6 +39,9 @@ function browser({ host = 'www.annoto.net', ua = 'Mozilla/5.0 Chrome/141', w = 1
     clarity: (...a) => clarityCalls.push(a),
   };
   window.window = window;
+  // Webflow's native integration runs gtag('js'); gtag('config', MID) inline, before this script,
+  // and injects its gtag.js <script> later, so only the queued config is visible at run time.
+  if (nativeQueued) window.dataLayer = [['js', new Date()], ['config', MID]];
   const ctx = vm.createContext(window);
   vm.runInContext(fs.readFileSync(FILE, 'utf8'), ctx);
   const fire = (type, isTrusted = true) => (listeners[type] || []).slice().forEach((l) => l.fn({ type, isTrusted }));
@@ -115,4 +118,15 @@ test('soft bots that interact are still tagged traffic_type=bot', () => {
 test('stored consent is granted before the gate opens', () => {
   const b = browser({ consent: 'granted' });
   assert.ok(b.has('consent', 'update'));
+});
+
+test('native config already queued in dataLayer (gtag.js not yet in the DOM) is detected', () => {
+  const b = browser({ nativeQueued: true });
+  assert.strictEqual(b.window['ga-disable-' + MID], true, 'the queued native config must be held off');
+  assert.strictEqual(b.count('config', MID), 1, 'only the native config, none added');
+  b.fire('scroll');
+  assert.strictEqual(b.window['ga-disable-' + MID], false);
+  assert.strictEqual(b.count('config', MID), 1);
+  assert.strictEqual(b.count('event', 'page_view'), 1);
+  assert.ok(!b.appended.some((n) => n.src), 'no second gtag.js');
 });
