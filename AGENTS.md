@@ -50,6 +50,7 @@ Docs mirror rules and code for humans. When a change makes a guide, design doc, 
 | Command                                 | Effect                                                                                                                              |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `node --test scripts/annotoconsent.test.js` | Runs the AnnotoConsent GA4-gate tests in a fake browser (node:vm); no dependencies. |
+| `node --test scripts/annotonavmega.test.js` | Renders the AnnotoNavMega menus against a fake DOM (node:vm) and checks the Solutions column order; no dependencies. |
 | _[FILL IN: the static-server command]_ | Serves `design_handoff_annoto_website/site/` so `Home.dc.html` opens in a browser — the handoff README says to serve it statically but names no command. |
 
 There is no aggregate check yet: the rows above are run one at a time. _[FILL IN: the one command that should run all of them, once it exists.]_

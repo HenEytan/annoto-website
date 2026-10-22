@@ -1,4 +1,4 @@
-/* AnnotoNavMega 1.18.0 (2026-09-22): based on 1.17.0 (Video Completion menu item). Removes the 'Get product updates' subscribe box from the mega-menu bottom bar: it posted to a retired Cloudflare worker and HubSpot's form collector counted every click on it as a website submission. Newsletter signup lives in the footer form and blog CTAs, which post to INBOX. */
+/* AnnotoNavMega 1.19.0 (2026-10-21): Solutions columns reordered to By Sector, By Role, By Journey, By Discipline (By Sector first, 'By Learning Journey' shortened to 'By Journey'). 1.18.0 (2026-09-22): based on 1.17.0 (Video Completion menu item). Removes the 'Get product updates' subscribe box from the mega-menu bottom bar: it posted to a retired Cloudflare worker and HubSpot's form collector counted every click on it as a website submission. Newsletter signup lives in the footer form and blog CTAs, which post to INBOX. */
 (function(){
   if(window.__axmNav) return; window.__axmNav=1;
 
@@ -73,22 +73,22 @@
       ],cards:true},
     solutions:{cls:'axm-solutions',
       columns:[
-        {icon:'learn',title:'BY LEARNING JOURNEY',items:[
-          ['Self Learning','Private notes &amp; reflection','/notes-summaries'],
-          ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/in-video-quizzes'],
-          ['Collaboration &amp; Engagement','Discussion on the video','/discussions-comments'],
-          ["Learners' Video Submission",'Peer review &amp; skills','/video-assignments'],
-          ['All Learning Journeys','See the full path','/learning-journeys','New']]},
+        {icon:'building',title:'BY SECTOR',items:[
+          ['Higher Education','Active learning on campus','/higher-education'],
+          ['K-12 Schools','Safe, guided participation','/k-12'],
+          ['Corporate Learning','Training that sticks','/corporate-learning'],
+          ['Communication &amp; Media','Town halls, events &amp; audiences','/media-communities']]},
         {icon:'people',title:'BY ROLE',items:[
           ['Faculty','Engagement you can see','/for-faculty'],
           ['Academic Leaders','Outcomes at scale','/for-leaders'],
           ['Instructional Designers','Design active video','/for-instructional-designers'],
           ['IT &amp; LMS Admins','Deploy in minutes','/for-it-admins']]},
-        {icon:'building',title:'BY SECTOR',items:[
-          ['Higher Education','Active learning on campus','/higher-education'],
-          ['K-12 Schools','Safe, guided participation','/k-12'],
-          ['Corporate Learning','Training that sticks','/corporate-learning'],
-          ['Media &amp; Communities','Audiences that talk back','/media-communities']]},
+        {icon:'learn',title:'BY JOURNEY',items:[
+          ['Self Learning','Private notes &amp; reflection','/notes-summaries'],
+          ['Feedback &amp; Assessment','Quizzes, completion &amp; grading','/in-video-quizzes'],
+          ['Collaboration &amp; Engagement','Discussion on the video','/discussions-comments'],
+          ["Learners' Video Submission",'Peer review &amp; skills','/video-assignments'],
+          ['All Learning Journeys','See the full path','/learning-journeys','New']]},
         {icon:'book',title:'BY DISCIPLINE',items:[
           ['Nursing','Clinical skills, reviewed frame by frame','/nursing-education'],
           ['Teacher Education','Classroom practice on the timeline','/teacher-education'],
